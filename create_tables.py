@@ -3,7 +3,7 @@ from sql_queries import create_table_queries, drop_table_queries
 
 def create_database():
     #connect to default database
-    conn = psycopg2.connect("host=127.0.0.1 dbname=postgres user=postgres password=chetara1995")
+    conn = psycopg2.connect("host=127.0.0.1 dbname=postgres user=postgres password=****")
     conn.set_session(autocommit=True)
     cur = conn.cursor()
 
@@ -15,7 +15,7 @@ def create_database():
     conn.close() 
 
     # connect to music database
-    conn = psycopg2.connect("host=127.0.0.1 dbname=music user=postgres password=chetara1995")
+    conn = psycopg2.connect("host=127.0.0.1 dbname=music user=postgres password=****")
     cur = conn.cursor()
     
     return cur, conn
